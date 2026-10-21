@@ -1,0 +1,38 @@
+diff --git a/.specify/extensions/program-kit-governance/scripts/coding_context.py b/.specify/extensions/program-kit-governance/scripts/coding_context.py
+index 45c8660..77b594c 100644
+--- a/.specify/extensions/program-kit-governance/scripts/coding_context.py
++++ b/.specify/extensions/program-kit-governance/scripts/coding_context.py
+@@ -305,7 +305,10 @@ def prepare(root, feature, *, operation=None, affected_paths=(), reconcile=False
+             actual_source.append(content)
+             signals = sorted({key for key, pattern in {**CAPABILITIES, **MECHANISMS}.items() if re.search(pattern, content, re.I)})
+             observations.append({**source(root, file), 'signals': signals, 'kind': 'bounded lexical; semantic review remains due'})
+-        source_tags = context(root, feature, 'implementation', compile_paths, prose_override=relative, actual_source=actual_source)
++        # Product adoption selects guidance; it is not evidence that each pure
++        # compilation owner contains the product's HTTP/persistence mechanisms.
++        source_tags = context(root, feature, 'implementation', compile_paths, prose_override=relative,
++                              actual_source=actual_source, inherit_adoption=False)
+         tags.update(source_tags)
+         if declaration and declaration.get('role') in ('core', 'helper') and source_tags & {'persistence', 'api'}:
+             blockers.append({'code': 'PKC012', 'project': relative, 'owner': 'semantic source/architecture reviewer',
+diff --git a/.specify/extensions/program-kit-governance/scripts/feature_context.py b/.specify/extensions/program-kit-governance/scripts/feature_context.py
+index 6826c16..81f918d 100644
+--- a/.specify/extensions/program-kit-governance/scripts/feature_context.py
++++ b/.specify/extensions/program-kit-governance/scripts/feature_context.py
+@@ -189,7 +189,7 @@ def frontend_only_declaration(prose):
+     return False
+ 
+ 
+-def context(root, feature, phase, affected_paths=(), prose_override=None, actual_source=None):
++def context(root, feature, phase, affected_paths=(), prose_override=None, actual_source=None, inherit_adoption=True):
+     prose = '\n'.join(affirmative(path.read_text(encoding='utf-8'))
+                       for name in ('spec.md', 'plan.md', 'research.md', 'data-model.md', 'quickstart.md', 'tasks.md')
+                       if (path := feature / name).is_file())
+@@ -225,7 +225,7 @@ def context(root, feature, phase, affected_paths=(), prose_override=None, actual
+     frontend_only = frontend_only_declaration(prose)
+     if frontend_only and selected:
+         raise ValueError('A frontend-only declaration conflicts with selected backend project evidence; resolve the feature scope')
+-    inherited_tags = inherited['tags'] - ({'dotnet', 'api', 'persistence', 'capabilities'} if frontend_only else set())
++    inherited_tags = (inherited['tags'] if inherit_adoption else set()) - ({'dotnet', 'api', 'persistence', 'capabilities'} if frontend_only else set())
+     tags = {'all'} | inherited_tags
+     tags.update(tag for tag, pattern in CAPABILITIES.items() if re.search(pattern, content))
+     identity = r'\b(?:sign[ -]?in|sign[ -]?out|login|logout|password[ -]reset|account[ -]recovery|credential[ -]recovery)\b'

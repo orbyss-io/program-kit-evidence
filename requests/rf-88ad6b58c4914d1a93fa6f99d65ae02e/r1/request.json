@@ -1,0 +1,162 @@
+{
+  "component": "governance",
+  "contractVersion": "1.0",
+  "createdAt": "2026-10-21T10:14:04.218758+00:00",
+  "diagnostics": {
+    "context": {
+      "answer": "Program Kit 0.14.2; selected Foundation 0.3.6 and Build 0.3.2. US1 implementation preparation in an uncommitted fresh consumer workspace. Original initial invocation is not reconstructed; direct bounded helper reproduction was independently executed on 2026-10-21 using retained HEAD source and the local remedy. No full worktree is submitted.",
+      "evidenceClass": "inspected",
+      "explanationKind": "recorded",
+      "references": [
+        "report.md",
+        "evidence/proof.json",
+        "evidence/local-remedy.diff",
+        "evidence/regression.py"
+      ]
+    },
+    "decision": {
+      "answer": "Retrospective explanation of the retained local choice: repair the bounded prerequisite while preserving dependency locks, native checks and product guidance; do not weaken the architecture or reuse historical feature approval.",
+      "evidenceClass": "inspected",
+      "explanationKind": "retrospective",
+      "references": [
+        "report.md",
+        "evidence/proof.json",
+        "evidence/local-remedy.diff",
+        "evidence/regression.py"
+      ]
+    },
+    "expectation": {
+      "answer": "coding_context.prepare presents PKC012 as an observed API/persistence effect in a declared core/helper owner. Product-wide adopted guidance should remain applicable without establishing that every project contains those mechanisms. This expectation follows the installed observed-source blocker contract and pure compilation-owner role.",
+      "evidenceClass": "inspected",
+      "explanationKind": "recorded",
+      "references": [
+        "report.md",
+        "evidence/proof.json",
+        "evidence/local-remedy.diff",
+        "evidence/regression.py"
+      ]
+    },
+    "lesson": {
+      "answer": "Keep product guidance selection and project-level observed effects separate. Test pure/empty Core projects and real effects under the same adopted product capabilities so PKC012 stays meaningful.",
+      "evidenceClass": "reported",
+      "explanationKind": "retrospective",
+      "references": [
+        "report.md",
+        "evidence/proof.json",
+        "evidence/local-remedy.diff",
+        "evidence/regression.py"
+      ]
+    },
+    "observation": {
+      "answer": "Retained plan records a false PKC012 prerequisite blocker. A fresh source-level reproduction shows original feature_context.context inherits api and persistence tags for empty and pure-record Core source when the product adopts those capabilities. The coding_context.prepare source_tags call uses that inherited result in its PKC012 predicate. The local remedy removes only inherited adoption from observed-source classification; actual DbContext and MapGet mechanisms remain detected.",
+      "evidenceClass": "independently-reproduced",
+      "explanationKind": "recorded",
+      "references": [
+        "report.md",
+        "evidence/proof.json",
+        "evidence/local-remedy.diff",
+        "evidence/regression.py"
+      ]
+    },
+    "remedy": {
+      "answer": "Added optional inherit_adoption=True to feature_context.context and use False only for coding_context.prepare observed project source classification. Preserve default product guidance, real mechanism detection, native dependency/source checks and semantic review. Local remedy only; the fresh proof is source-level, not a full preflight run.",
+      "evidenceClass": "inspected",
+      "explanationKind": "recorded",
+      "references": [
+        "report.md",
+        "evidence/proof.json",
+        "evidence/local-remedy.diff",
+        "evidence/regression.py"
+      ]
+    },
+    "resources": {
+      "answer": "Inspected installed release_bundle.py / coding_context.py / feature_context.py as applicable, retained plan and native regression source; read the repair-request skill and installed contract/operating procedure. Executed the bounded HEAD-versus-local source/helper proof. Full earlier engineering suites are retained locally but are not re-executed or submitted as fresh evidence here.",
+      "evidenceClass": "inspected",
+      "explanationKind": "recorded",
+      "references": [
+        "report.md",
+        "evidence/proof.json",
+        "evidence/local-remedy.diff",
+        "evidence/regression.py"
+      ]
+    },
+    "results": {
+      "answer": "Fresh bounded reproduction and remedy assertions passed; see proof.json. Existing maintained regression source is inspected, not claimed as a fresh complete test run. Original errors are retained observations; later publisher behavior and upstream acceptance are unknown.",
+      "evidenceClass": "independently-reproduced",
+      "explanationKind": "recorded",
+      "references": [
+        "report.md",
+        "evidence/proof.json",
+        "evidence/local-remedy.diff",
+        "evidence/regression.py"
+      ]
+    }
+  },
+  "evidence": {
+    "dirtyState": "Uncommitted consumer implementation and bounded local tooling amendments; only selected excerpts submitted.",
+    "knowledgeVersion": "Installed Program Kit 0.14.2 governance/engineering source with disclosed local amendments",
+    "members": [
+      {
+        "bytes": 2616,
+        "path": "report.md",
+        "provenance": "Authored from retained plan and independently executed bounded proof",
+        "purpose": "Portable report",
+        "qualification": "UTF-8 text/JSON; no binary, credential, session or private business data",
+        "sha256": "5afb3821f85e51b41869a0994978bfa00b9b5595bee4164bf8e1375ac56bb844",
+        "transformations": [
+          "Only issue-specific text selected; full worktree, earlier test logs and environment omitted"
+        ]
+      },
+      {
+        "bytes": 1075,
+        "path": "evidence/proof.json",
+        "provenance": "Authored from retained plan and independently executed bounded proof",
+        "purpose": "Bounded independent observation",
+        "qualification": "UTF-8 text/JSON; no binary, credential, session or private business data",
+        "sha256": "3501dfd05d93aa75fe98c37caf3e7de3b1ade27ed0a3a9c318c762c880d723e2",
+        "transformations": [
+          "Only issue-specific text selected; full worktree, earlier test logs and environment omitted"
+        ]
+      },
+      {
+        "bytes": 3271,
+        "path": "evidence/local-remedy.diff",
+        "provenance": "Selected consumer working-tree diff or regression; source is submitted as data",
+        "purpose": "Inspected local remedy",
+        "qualification": "UTF-8 text/JSON; no binary, credential, session or private business data",
+        "sha256": "88fad41583069690598c572060e4b50adf13bbd0f4b4280e3ae7f3bd37d75cc0",
+        "transformations": [
+          "Only issue-specific text selected; full worktree, earlier test logs and environment omitted"
+        ]
+      },
+      {
+        "bytes": 1538,
+        "path": "evidence/regression.py",
+        "provenance": "Selected consumer working-tree diff or regression; source is submitted as data",
+        "purpose": "Inspected maintained regression source",
+        "qualification": "UTF-8 text/JSON; no binary, credential, session or private business data",
+        "sha256": "52b79205ccab074bf40a421b4d027e84f21d0cb73af67af32b60f41fcba587ab",
+        "transformations": [
+          "Only issue-specific text selected; full worktree, earlier test logs and environment omitted"
+        ]
+      }
+    ],
+    "profileVersion": "Foundation-0.3.6-Build-0.3.2",
+    "programKitVersion": "0.14.2",
+    "sourceCommit": "b54adf5def65020dab2210f0a5b50983caafd973"
+  },
+  "omissions": [
+    "No whole worktree, raw environment, original unbounded logs or absolute machine paths.",
+    "No package archive, credentials, business documents or account identifiers.",
+    "No claim of later publisher behavior, accepted repair, release or full story acceptance."
+  ],
+  "originalAccount": "Retained consumer implementation plan: Initial implementation preparation exposed two reproducible engineering defects: the signed-package helper disabled lock generation beside a retained tool lock, and the coding preflight attributed adopted product effects to an empty pure Core project.",
+  "projectId": "policy-workspace-demo",
+  "requestId": "rf-88ad6b58c4914d1a93fa6f99d65ae02e",
+  "revision": 1,
+  "supersedes": null,
+  "title": "Coding preflight reports PKC012 on pure Core projects from inherited adoption effects",
+  "unclassified": [
+    "Consumer-local remedies are observations; maintainer root-cause classification and accepted repair remain unknown."
+  ]
+}

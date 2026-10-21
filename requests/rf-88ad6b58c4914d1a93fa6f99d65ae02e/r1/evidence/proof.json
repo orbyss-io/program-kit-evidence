@@ -1,0 +1,43 @@
+{
+  "execution": "independently executed 2026-10-21",
+  "method": "HEAD source vs locally amended source; mocked product adoption and synthetic source snippets; not a full current preflight run",
+  "results": [
+    {
+      "syntheticSource": "",
+      "originalEffectTags": [
+        "api",
+        "persistence"
+      ],
+      "localRemedyEffectTags": []
+    },
+    {
+      "syntheticSource": "public record Label(string Value);",
+      "originalEffectTags": [
+        "api",
+        "persistence"
+      ],
+      "localRemedyEffectTags": []
+    },
+    {
+      "syntheticSource": "public class Data : DbContext { }",
+      "originalEffectTags": [
+        "api",
+        "persistence"
+      ],
+      "localRemedyEffectTags": [
+        "persistence"
+      ]
+    },
+    {
+      "syntheticSource": "using Microsoft.AspNetCore.Http; app.MapGet(\"/\", () => 1);",
+      "originalEffectTags": [
+        "api",
+        "persistence"
+      ],
+      "localRemedyEffectTags": [
+        "api"
+      ]
+    }
+  ],
+  "upstreamRepair": "unknown"
+}
