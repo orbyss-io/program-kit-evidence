@@ -1,0 +1,32 @@
+{
+  "method": "Actual synthetic-account sign-in and native sign-out through Chromium, Dutch browser locale; public landing observed after native completion.",
+  "configuration": {
+    "Foundation:Web:DefaultLocale": "nl",
+    "Foundation:Web:SupportedLocales": [
+      "nl",
+      "en"
+    ],
+    "Foundation:Web:Presentation": {
+      "ApplicationName": "Consumer application",
+      "AssetResponsePolicy": "default",
+      "Copy": {},
+      "Locale": "nl",
+      "ResponsePolicy": "default",
+      "ReturnPath": "/",
+      "RoutePrefix": "/auth",
+      "SignOutConfirmation": "when-unsaved",
+      "Theme": "green"
+    }
+  },
+  "landing": {
+    "locale": "nl",
+    "title": "Session status \u2014 Consumer application",
+    "headings": [
+      "Session status"
+    ],
+    "publicText": "Consumer application\nSession status\n\nNo local session is active.\n\nSign in\n\nReturn to application",
+    "images": 0
+  },
+  "path": "/auth/signed-out",
+  "fixture": "Local synthetic account; no private documents or policy contents included."
+}

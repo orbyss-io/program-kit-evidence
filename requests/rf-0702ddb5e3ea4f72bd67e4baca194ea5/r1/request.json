@@ -1,0 +1,144 @@
+{
+  "component": "dotnet",
+  "contractVersion": "1.0",
+  "createdAt": "2026-10-20T12:35:57.253672+00:00",
+  "diagnostics": {
+    "context": {
+      "answer": "Program Kit 0.14.2; Foundation 0.3.6, Build 0.3.2, exporter 0.2.7, CShells 0.0.31, Forms 0.2.1, Localization 0.1.2. US1 human review of a policy workspace. Trigger: native browser sign-out to /auth/signed-out. Working tree has uncommitted fresh consumer implementation; only this bounded observation and selected publisher contract are included.",
+      "evidenceClass": "inspected",
+      "explanationKind": "recorded",
+      "references": [
+        "report.md",
+        "evidence/presentation-contract.json",
+        "evidence/signed-out-observation.json"
+      ]
+    },
+    "decision": {
+      "answer": "Retain the selected native authentication, session and presentation mechanism. Report the observable locale discontinuity and missing logo seam upstream; do not infer a maintainer decision. Consumer language/theme selection remains separate from the anonymous publisher page.",
+      "evidenceClass": "inspected",
+      "explanationKind": "retrospective",
+      "references": [
+        "report.md",
+        "evidence/presentation-contract.json",
+        "evidence/signed-out-observation.json"
+      ]
+    },
+    "expectation": {
+      "answer": "Human review expects a Dutch-selected application to keep Dutch copy on signed-out pages and show product branding. Captured Presentation.Locale=nl and Web.DefaultLocale=nl establish declared locale; the complete publisher contract has Copy and colour presets but no logo seam. Automatic translated copy and application-language propagation are requested capabilities, not promises established by that contract.",
+      "evidenceClass": "inspected",
+      "explanationKind": "recorded",
+      "references": [
+        "report.md",
+        "evidence/presentation-contract.json",
+        "evidence/signed-out-observation.json"
+      ]
+    },
+    "lesson": {
+      "answer": "Proposed upstream assessment: add locale-aware defaults and a documented selected-language path, plus a constrained safe product-brand/logo contribution for anonymous authentication pages. Preserve native security/session behavior. This is a consumer observation and capability proposal, not an accepted repair.",
+      "evidenceClass": "reported",
+      "explanationKind": "retrospective",
+      "references": [
+        "report.md",
+        "evidence/presentation-contract.json",
+        "evidence/signed-out-observation.json"
+      ]
+    },
+    "observation": {
+      "answer": "Actual Chromium sign-in and native sign-out with a synthetic account and Dutch browser locale rendered html lang=nl, English Session status / No local session is active / Sign in / Return to application, and zero image elements. App name and green colours appeared.",
+      "evidenceClass": "independently-reproduced",
+      "explanationKind": "recorded",
+      "references": [
+        "report.md",
+        "evidence/presentation-contract.json",
+        "evidence/signed-out-observation.json"
+      ]
+    },
+    "remedy": {
+      "answer": "No signed-out workaround applied. The existing native anonymous landing remains selected. Separate consumer CSS changes address settings overflow and Keycloak input-frame appearance and do not repair this publisher-page locale/branding gap.",
+      "evidenceClass": "inspected",
+      "explanationKind": "recorded",
+      "references": [
+        "report.md",
+        "evidence/presentation-contract.json",
+        "evidence/signed-out-observation.json"
+      ]
+    },
+    "resources": {
+      "answer": "Consulted installed repair-request and implement skills, repair-feedback contract/operating procedure, actual Foundation settings contract and native browser/session configuration. Executed the prepared Playwright Chromium runtime and read the public landing. Bounded open/closed upstream issue searches found no candidates; this is not proof of uniqueness.",
+      "evidenceClass": "inspected",
+      "explanationKind": "recorded",
+      "references": [
+        "report.md",
+        "evidence/presentation-contract.json",
+        "evidence/signed-out-observation.json"
+      ]
+    },
+    "results": {
+      "answer": "The public-page observation was independently executed. Captured contract fields were inspected. Existing earlier US1 engineering passes do not prove localization or branding. Newer publisher versions, production/provider-wide behavior and maintainer diagnosis are unknown. Native sign-out completed and the public page reported no active local session.",
+      "evidenceClass": "independently-reproduced",
+      "explanationKind": "recorded",
+      "references": [
+        "report.md",
+        "evidence/presentation-contract.json",
+        "evidence/signed-out-observation.json"
+      ]
+    }
+  },
+  "evidence": {
+    "dirtyState": "Uncommitted consumer implementation and local presentation repairs; no whole-worktree evidence supplied.",
+    "knowledgeVersion": "Program Kit installed 0.14.2; captured Foundation.Web.Presentation 0.3.6",
+    "members": [
+      {
+        "bytes": 2489,
+        "path": "report.md",
+        "provenance": "Authored from human review, actual browser observation and selected publisher metadata.",
+        "purpose": "Portable problem, reproduction, limits and proposed capability assessment.",
+        "qualification": "UTF-8 text/JSON; inspected public or synthetic content, no binary attachment or credential/session/private data.",
+        "sha256": "63e8fa9df193a4411aad7bccb1546b657dc4c0c127326ae0b43b14cf86de35b8",
+        "transformations": [
+          "Condensed to this one publisher-page issue; unrelated consumer styling evidence omitted."
+        ]
+      },
+      {
+        "bytes": 10780,
+        "path": "evidence/presentation-contract.json",
+        "provenance": "Extracted one package entry from native eng/foundation-settings.contract.json.",
+        "purpose": "Exact selected complete publisher settings contract and source/assembly fingerprints.",
+        "qualification": "UTF-8 text/JSON; inspected public or synthetic content, no binary attachment or credential/session/private data.",
+        "sha256": "9efd4372659777af42e279c65536b9e25124a27619f15a8a08d80a66b0ec6727",
+        "transformations": [
+          "Other package entries omitted; selected entry content unchanged; JSON reformatted."
+        ]
+      },
+      {
+        "bytes": 1070,
+        "path": "evidence/signed-out-observation.json",
+        "provenance": "Actual Chromium sign-out observation and native selected configuration.",
+        "purpose": "Bounded public-page results and minimal selected presentation configuration.",
+        "qualification": "UTF-8 text/JSON; inspected public or synthetic content, no binary attachment or credential/session/private data.",
+        "sha256": "1567f1c325328b8b4e67e9cd160927a5c555dd4537018038ccb9e53aa19274fc",
+        "transformations": [
+          "Consumer display name replaced with Consumer application.",
+          "Only anonymous public text, locale, headings, image count and presentation configuration retained."
+        ]
+      }
+    ],
+    "profileVersion": "foundation-0.3.6-build-0.3.2-exporter-0.2.7-forms-0.2.1-localization-0.1.2",
+    "programKitVersion": "0.14.2",
+    "sourceCommit": "b54adf5def65020dab2210f0a5b50983caafd973"
+  },
+  "omissions": [
+    "Original screenshots, full worktree and environment omitted as unnecessary.",
+    "No binary evidence; no cookies, credentials, account IDs, private documents or policy contents.",
+    "No claim about later releases, a maintainer repair or production behavior."
+  ],
+  "originalAccount": "Also the signed out page is still in English and does not adhere to locale.  I think this is a missing-capability/defect in porgram kit. Create a repair request on program-kit gh repo for this please.  Also, the signout page is not really customized except for the colours (no branding really)",
+  "projectId": "policy-workspace-demo",
+  "requestId": "rf-0702ddb5e3ea4f72bd67e4baca194ea5",
+  "revision": 1,
+  "supersedes": null,
+  "title": "Browser presentation renders English signed-out copy with Locale=nl and lacks logo branding seam",
+  "unclassified": [
+    "The user calls this a missing-capability/defect; root cause and maintainer disposition remain unclassified."
+  ]
+}
