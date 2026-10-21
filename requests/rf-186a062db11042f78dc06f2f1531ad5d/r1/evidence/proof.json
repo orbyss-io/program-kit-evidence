@@ -1,0 +1,12 @@
+{
+  "execution": "independently executed 2026-10-21",
+  "method": "HEAD helper then locally amended helper on a real restored signed NuGet archive; no package bytes or paths published",
+  "originalResult": "PKR014 signed package identity adapter build failed",
+  "nugetDiagnosticCodes": [
+    "NU1005"
+  ],
+  "localRemedyMatchesRestoredSha512": true,
+  "retainedToolLockUnchanged": true,
+  "selectedSdk": "10.0.402",
+  "upstreamRepair": "unknown"
+}

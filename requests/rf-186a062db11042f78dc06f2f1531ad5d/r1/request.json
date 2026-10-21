@@ -1,0 +1,162 @@
+{
+  "component": "tooling",
+  "contractVersion": "1.0",
+  "createdAt": "2026-10-21T10:14:00.145542+00:00",
+  "diagnostics": {
+    "context": {
+      "answer": "Program Kit 0.14.2; selected Foundation 0.3.6 and Build 0.3.2. US1 implementation preparation in an uncommitted fresh consumer workspace. Original initial invocation is not reconstructed; direct bounded helper reproduction was independently executed on 2026-10-21 using retained HEAD source and the local remedy. No full worktree is submitted.",
+      "evidenceClass": "inspected",
+      "explanationKind": "recorded",
+      "references": [
+        "report.md",
+        "evidence/proof.json",
+        "evidence/local-remedy.diff",
+        "evidence/regression.py"
+      ]
+    },
+    "decision": {
+      "answer": "Retrospective explanation of the retained local choice: repair the bounded prerequisite while preserving dependency locks, native checks and product guidance; do not weaken the architecture or reuse historical feature approval.",
+      "evidenceClass": "inspected",
+      "explanationKind": "retrospective",
+      "references": [
+        "report.md",
+        "evidence/proof.json",
+        "evidence/local-remedy.diff",
+        "evidence/regression.py"
+      ]
+    },
+    "expectation": {
+      "answer": "The native nuget_content_hash contract states that signed package identity is computed from actual archive bytes using the selected SDK, without trusting cached metadata. A retained helper lock should not prevent that adapter from building; deleting or rewriting the lock is not required.",
+      "evidenceClass": "inspected",
+      "explanationKind": "recorded",
+      "references": [
+        "report.md",
+        "evidence/proof.json",
+        "evidence/local-remedy.diff",
+        "evidence/regression.py"
+      ]
+    },
+    "lesson": {
+      "answer": "Assess isolated helper restore/lock handling in the managed template, including signed archives, retained tool locks and independent scratch output paths. Qualify the native path rather than deleting lock evidence.",
+      "evidenceClass": "reported",
+      "explanationKind": "retrospective",
+      "references": [
+        "report.md",
+        "evidence/proof.json",
+        "evidence/local-remedy.diff",
+        "evidence/regression.py"
+      ]
+    },
+    "observation": {
+      "answer": "The unamended HEAD helper passes RestorePackagesWithLockFile=false while using a project beside a retained packages.lock.json. The independently executed direct helper call fails with PKR014; the sanitized proof records NuGet codes. The local isolated NuGetLockFilePath remedy returns the restored SHA512 identity and leaves the tool lock unchanged.",
+      "evidenceClass": "independently-reproduced",
+      "explanationKind": "recorded",
+      "references": [
+        "report.md",
+        "evidence/proof.json",
+        "evidence/local-remedy.diff",
+        "evidence/regression.py"
+      ]
+    },
+    "remedy": {
+      "answer": "Added NuGetLockFilePath pointing inside the existing ignored helper scratch directory. Preserve the signed archive identity algorithm, selected SDK, retained source lock and dependency pins. Local remedy only; no accepted upstream repair is claimed.",
+      "evidenceClass": "inspected",
+      "explanationKind": "recorded",
+      "references": [
+        "report.md",
+        "evidence/proof.json",
+        "evidence/local-remedy.diff",
+        "evidence/regression.py"
+      ]
+    },
+    "resources": {
+      "answer": "Inspected installed release_bundle.py / coding_context.py / feature_context.py as applicable, retained plan and native regression source; read the repair-request skill and installed contract/operating procedure. Executed the bounded HEAD-versus-local source/helper proof. Full earlier engineering suites are retained locally but are not re-executed or submitted as fresh evidence here.",
+      "evidenceClass": "inspected",
+      "explanationKind": "recorded",
+      "references": [
+        "report.md",
+        "evidence/proof.json",
+        "evidence/local-remedy.diff",
+        "evidence/regression.py"
+      ]
+    },
+    "results": {
+      "answer": "Fresh bounded reproduction and remedy assertions passed; see proof.json. Existing maintained regression source is inspected, not claimed as a fresh complete test run. Original errors are retained observations; later publisher behavior and upstream acceptance are unknown.",
+      "evidenceClass": "independently-reproduced",
+      "explanationKind": "recorded",
+      "references": [
+        "report.md",
+        "evidence/proof.json",
+        "evidence/local-remedy.diff",
+        "evidence/regression.py"
+      ]
+    }
+  },
+  "evidence": {
+    "dirtyState": "Uncommitted consumer implementation and bounded local tooling amendments; only selected excerpts submitted.",
+    "knowledgeVersion": "Installed Program Kit 0.14.2 governance/engineering source with disclosed local amendments",
+    "members": [
+      {
+        "bytes": 2346,
+        "path": "report.md",
+        "provenance": "Authored from retained plan and independently executed bounded proof",
+        "purpose": "Portable report",
+        "qualification": "UTF-8 text/JSON; no binary, credential, session or private business data",
+        "sha256": "7e7acc4d3b4da077478a890d99f33f90f5cf6c74905692a4b83805edf479e967",
+        "transformations": [
+          "Only issue-specific text selected; full worktree, earlier test logs and environment omitted"
+        ]
+      },
+      {
+        "bytes": 461,
+        "path": "evidence/proof.json",
+        "provenance": "Authored from retained plan and independently executed bounded proof",
+        "purpose": "Bounded independent observation",
+        "qualification": "UTF-8 text/JSON; no binary, credential, session or private business data",
+        "sha256": "6b43b8891f7cf6f399799d9ff0131c377372027e77ff4ea7c6bb5f2a02cb7333",
+        "transformations": [
+          "Only issue-specific text selected; full worktree, earlier test logs and environment omitted"
+        ]
+      },
+      {
+        "bytes": 1016,
+        "path": "evidence/local-remedy.diff",
+        "provenance": "Selected consumer working-tree diff or regression; source is submitted as data",
+        "purpose": "Inspected local remedy",
+        "qualification": "UTF-8 text/JSON; no binary, credential, session or private business data",
+        "sha256": "80046ba37e2f018a0e2b7846cd10062993380a71f5b38a02884f34b850f552d6",
+        "transformations": [
+          "Only issue-specific text selected; full worktree, earlier test logs and environment omitted"
+        ]
+      },
+      {
+        "bytes": 1884,
+        "path": "evidence/regression.py",
+        "provenance": "Selected consumer working-tree diff or regression; source is submitted as data",
+        "purpose": "Inspected maintained regression source",
+        "qualification": "UTF-8 text/JSON; no binary, credential, session or private business data",
+        "sha256": "902ee35a0d553e91a7d6cf8b8ebbfd6e882b2e1b4d76e86c86c016a6a3da393a",
+        "transformations": [
+          "Only issue-specific text selected; full worktree, earlier test logs and environment omitted"
+        ]
+      }
+    ],
+    "profileVersion": "Foundation-0.3.6-Build-0.3.2",
+    "programKitVersion": "0.14.2",
+    "sourceCommit": "b54adf5def65020dab2210f0a5b50983caafd973"
+  },
+  "omissions": [
+    "No whole worktree, raw environment, original unbounded logs or absolute machine paths.",
+    "No package archive, credentials, business documents or account identifiers.",
+    "No claim of later publisher behavior, accepted repair, release or full story acceptance."
+  ],
+  "originalAccount": "Retained consumer implementation plan: Initial implementation preparation exposed two reproducible engineering defects: the signed-package helper disabled lock generation beside a retained tool lock, and the coding preflight attributed adopted product effects to an empty pure Core project.",
+  "projectId": "policy-workspace-demo",
+  "requestId": "rf-186a062db11042f78dc06f2f1531ad5d",
+  "revision": 1,
+  "supersedes": null,
+  "title": "Signed-package identity adapter fails when its retained tool lock exists",
+  "unclassified": [
+    "Consumer-local remedies are observations; maintainer root-cause classification and accepted repair remain unknown."
+  ]
+}

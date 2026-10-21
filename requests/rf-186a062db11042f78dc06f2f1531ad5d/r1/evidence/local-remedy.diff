@@ -1,0 +1,14 @@
+diff --git a/eng/release_bundle.py b/eng/release_bundle.py
+index baa46cf..e35ed68 100644
+--- a/eng/release_bundle.py
++++ b/eng/release_bundle.py
+@@ -73,6 +73,9 @@ def nuget_content_hash(repository: Path, package: Path) -> str:
+         command = ['dotnet', 'build', str(project), '-c', 'Release', '--nologo', '--verbosity', 'quiet',
+                    '-p:ImportDirectoryBuildProps=false', '-p:ImportDirectoryBuildTargets=false',
+                    '-p:RestorePackagesWithLockFile=false',
++                   # Keep the isolated helper build independent of the retained
++                   # consumer tool lock; NuGet rejects disabling locks beside it.
++                   '-p:NuGetLockFilePath=' + str(directory / 'packages.lock.json'),
+                    '-p:BaseIntermediateOutputPath=' + str(directory / 'obj') + os.sep,
+                    '-p:OutputPath=' + str(directory / 'bin') + os.sep]
+         built = subprocess.run(command, cwd=repository, capture_output=True, text=True, timeout=120)
